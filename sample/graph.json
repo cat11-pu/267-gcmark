@@ -1,0 +1,14 @@
+{
+  "budget": 1,
+  "objects": ["o1", "o2", "o3", "o4", "o5", "o6"],
+  "unknown_error_code": "E_UNKNOWN_OBJECT",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "refs": {}, "roots": [], "marked": [], "queue": [], "freed": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "root", "obj": "o1" },
+    { "id": 2, "kind": "link", "from": "o1", "to": "o2" },
+    { "id": 3, "kind": "link", "from": "o2", "to": "o3" },
+    { "id": 4, "kind": "root", "obj": "o5" },
+    { "id": 5, "kind": "link", "from": "o3", "to": "o4" }
+  ]
+}
